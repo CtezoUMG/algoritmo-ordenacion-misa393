@@ -10,8 +10,7 @@ public class Algoritmo
         return Enumerable.Range(0, n).Select(_ => r.Next(0, 50000)).ToArray();
     }
     /// <summary>
-    /// cambio por ctezo
-    /// misa
+    /// 
     /// 
     /// </summary>
     /// <param name="arr"></param>
@@ -32,6 +31,19 @@ public class Algoritmo
     public void BubbleSort(int[] arr)
     {
         // TODO: Implementar el algoritmo de Bubble Sort tradicional
+        int n = arr.Length;
+        for (int i = 0; i < arr.Length - 1; i++)
+        {
+            for (int j = 0; j < n - i - 1; j++)
+            {
+                if (arr[j] > arr[j + 1])
+                {
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
 
     }
 }
