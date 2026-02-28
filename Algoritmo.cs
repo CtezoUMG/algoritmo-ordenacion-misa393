@@ -9,7 +9,11 @@ public class Algoritmo
         Random r = new Random(42);
         return Enumerable.Range(0, n).Select(_ => r.Next(0, 50000)).ToArray();
     }
-
+    /// <summary>
+    /// cambio por ctezo
+    /// </summary>
+    /// <param name="arr"></param>
+    /// <returns></returns>
     public bool EstaOrdenado(int[] arr)
     {
         if (arr == null || arr.Length == 0) return true;
@@ -21,6 +25,7 @@ public class Algoritmo
         }
         return true;
     }
+
 
     public void BubbleSort(int[] arr)
     {

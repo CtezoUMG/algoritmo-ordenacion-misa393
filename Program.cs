@@ -12,6 +12,7 @@ Console.WriteLine($"Procesando: {CANTIDAD_ELEMENTOS:N0} números.");
 // 2. El alumno implementa esto en la clase Algoritmo
 ordenador.BubbleSort(datos);
 
+
 // 3. Validación de integridad
 if (ordenador.EstaOrdenado(datos))
 {
